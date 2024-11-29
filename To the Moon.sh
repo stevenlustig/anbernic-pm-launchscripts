@@ -1,4 +1,5 @@
 #!/bin/bash
+#use game files from download_depot 206440 206449 1669081141776437386
 
 export HOME=/root
 
@@ -20,7 +21,7 @@ get_controls
 
 PORTDIR=$(dirname "$0")
 GAMEDIR="$PORTDIR/to_the_moon"
-CONFDIR="$GAMEDIR/conf/"
+CONFDIR="$GAMEDIR/conf"
 
 CUR_TTY=/dev/tty0
 $ESUDO chmod 666 $CUR_TTY
@@ -30,7 +31,7 @@ exec > >(tee "$GAMEDIR/log.txt") 2>&1
 cd $GAMEDIR
 
 # Ensure the conf directory exists
-mkdir -p "$GAMEDIR/conf"
+mkdir -p "$CONFDIR"
 
 # Set the XDG environment variables for config & savefiles
 export XDG_CONFIG_HOME="$CONFDIR"
