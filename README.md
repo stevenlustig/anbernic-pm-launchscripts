@@ -2,6 +2,7 @@
 These scripts should replace the official portmaster scripts to make the ports run on anbernic's official firmware (Allwinner H700: RG35XX* v20240626+ 64-bit.)
 Credits to Portmaster team and @cbepx-me for the scripts. 
 
+Added extra scritps that were missing on the original repo and tested them on Anbernic RG40XXV
 
 you can grab the required files from [Portmaster](http://portmaster.games/games.html) . Please note that there are no copyrighted files being shared, here or at PM. 
 
