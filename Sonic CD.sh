@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Modify in settings.ini the following for Anbernic40XXH/V:
+# WindowScale=2
+# ScreenWidth=320
+
 export HOME=/root
 
 if [ -d "/opt/system/Tools/PortMaster/" ]; then
