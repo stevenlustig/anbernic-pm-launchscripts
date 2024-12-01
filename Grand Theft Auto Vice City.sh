@@ -57,7 +57,7 @@ fi
 cd "$GAMEDIR"
 $ESUDO chmod 666 /dev/uinput
 export SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"
-export LD_LIBRARY_PATH="$GAMEDIR/${LIBS}":$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="$GAMEDIR/${LIBS}":/usr/lib:/usr/lib32:$LD_LIBRARY_PATH
 $GPTOKEYB "${REVC}" &
 
 DSIPLAY_ID="$(cat /sys/class/power_supply/axp2202-battery/display_id)"
