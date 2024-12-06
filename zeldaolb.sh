@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# you will need to obtain libSDL2_gfx-1.0.so.0 (e.g. download the rpm and extract it from https://convertio.co/) and place it in zeldabolb/libs
+
 export HOME=/root
 
 if [ -d "/opt/system/Tools/PortMaster/" ]; then
