@@ -32,8 +32,8 @@ RA_WORK=/mnt/vendor/deep/retro
 cd "$GAMEDIR"
 
 $GPTOKEYB "retroarch" &
-$RA_WORK/retroarch $RA_CFG -L 2048_libretro.so.aarch64
-
+#$RA_WORK/retroarch $RA_CFG -L 2048_libretro.so.aarch64
+HOME=$RA_WORK/ $RA_WORK/retroarch -c $RA_CFG -v -L  $GAMEDIR/2048_libretro.so.aarch64
 
 printf "\033c" >> /dev/tty1
 printf "\033c" > /dev/tty0
