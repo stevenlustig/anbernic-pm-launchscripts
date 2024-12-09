@@ -34,26 +34,16 @@ $ESUDO chmod 666 /dev/tty0
 printf "\033c" > /dev/tty0
 echo "Loading... Please Wait." > /dev/tty0
 
+> "$GAMEDIR/log.txt" && exec > >(tee "$GAMEDIR/log.txt") 2>&1
+printf "\033c" > /dev/tty0
+
 # Exports
 export LD_LIBRARY_PATH="$GAMEDIR/libs.aarch64:/usr/lib:/usr/lib32:$LD_LIBRARY_PATH"
 export SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"
 export TEXTINPUTINTERACTIVE="Y"
 export XDG_DATA_HOME="$CONFDIR"
 
-export PATCHER_FILE="$GAMEDIR/patch/patchscript"
-export PATCHER_GAME="Pokemon Essentials"
-export PATCHER_TIME="around 1 minute"
-export PATCHDIR=$GAMEDIR
-
 cd $GAMEDIR
-
-# Check if patchlog.txt exists to skip patching
-if [ ! -f patchlog.txt ]; then
-    source "$controlfolder/utils/patcher.txt"
-fi
-
-# Move the mkxp.json preset
-mv preset/mkxp.json ./mkxp.json
 
 # Gptk and run port
 $GPTOKEYB "mkxp-z.aarch64" -c "./Essentials21.gptk" &
