@@ -1,6 +1,6 @@
 # anbernic-pm-launchscripts
 These scripts should replace the official portmaster scripts to make the ports run on anbernic's official firmware (Allwinner H700: RG35XX* v20240626+ 64-bit.)
-Credits to Portmaster team and @cbepx-me for the scripts. 
+Credits to Portmaster team and @cbepx-me for the scripts as well as harlekinrains on Reddit who ported and made tutorials about how to get them working. 
 
 Added extra scritps that were missing on the original repo and tested them on Anbernic RG40XXV
 
@@ -14,3 +14,5 @@ you can grab the required files from [Portmaster](http://portmaster.games/games.
 
 
 Feel free to pr and add other games. 
+
+#
