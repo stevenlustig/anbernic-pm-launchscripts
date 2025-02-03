@@ -53,7 +53,7 @@ if [ ! -f "$YT_DLP" ]; then
 fi 
 
 chmod a+rx $YT_DLP
-ln -fs YT_DLP /usr/bin/youtube-dl
+ln -fs "$YT_DLP" /usr/bin/youtube-dl
 
 $GPTOKEYB "love" &
 ./bin/love "$GAMEDIR"
