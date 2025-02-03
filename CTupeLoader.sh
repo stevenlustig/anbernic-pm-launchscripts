@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# Download YtMuos from https://github.com/nvcuong1312/YtMuos/archive/refs/heads/master.zip and place it in PORTS/CTube
+# Download YtMuos from https://github.com/nvcuong1312/YtMuos/archive/refs/heads/master.zip and place it in PORTS/CTupe
 # Get libmodplug.so.1 from internet or To The Moon libs and place it in PORTS/CTupe/bin/libs.aarch64
+# Change the Config.lua to: https://pastebin.com/cNZ2thYU
+# Copy a GPTOKEYB to the CTupe folder or change the config to use default GPTOKEYB
 # Profit ;)
 
 export HOME=/root
