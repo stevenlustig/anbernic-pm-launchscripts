@@ -3,6 +3,8 @@
 #download the x64 bit depot: 391540 391544
 #download the missing libs from: https://www.mediafire.com/file/570bh727b9z5mk7/libs.zip/file
 # place them in PORTS/Undertale/libs
+#download utils from: https://www.mediafire.com/file/od0wfvhn9yyptu1/utils.zip/file
+#place them in PORTS/Undertale
 
 export HOME=/root
 
